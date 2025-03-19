@@ -10,7 +10,7 @@ pipeline {
         stage('Checkout Code') {
             steps {
                 withCredentials([usernamePassword(credentialsId: 'git_NadheemM', usernameVariable: 'GIT_USER', passwordVariable: 'GIT_TOKEN')]) {
-                    git url: "https://$GIT_USER:$GIT_TOKEN@github.com/https://github.com/NadheemM/devops_nadhee.git", branch: 'main'
+                    git url: "https://$GIT_USER:$GIT_TOKEN@github.com/NadheemM/devops_nadhee.git", branch: 'main'
                 }
             }
         }
